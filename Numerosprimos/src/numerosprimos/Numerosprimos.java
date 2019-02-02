@@ -25,11 +25,11 @@ public class Numerosprimos {
         }
         System.out.println(" El array es: ");
         for(int i=0;i<num.length;i++){
-            System.out.print(i+" ");
+            System.out.print(i+" \t");
         }
         System.out.println("");
           for(int i=0;i<num.length;i++){
-            System.out.print(num[i]+" ");
+            System.out.print(num[i]+" \t");
         }
           System.out.println("\n El array con los primos primero es: ");
          for(int i=0;i<num.length;i++){
@@ -52,11 +52,11 @@ public class Numerosprimos {
              }
     }
          for(int i=0;i<num.length;i++){
-            System.out.print(i+" ");
+            System.out.print(i+" \t");
         }
          System.out.println("");
          for(int i=0;i<num.length;i++){
-            System.out.print(resultado[i]+" ");
+            System.out.print(resultado[i]+" \t");
         }
     } 
 }
