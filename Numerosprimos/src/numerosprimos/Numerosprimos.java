@@ -16,9 +16,11 @@ public class Numerosprimos {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        //Creo dos arrays, uno para guardar primero los numeros y el segundo para ordenarlos
         int []num=new int [10];
         int []resultado=new int [10];
        int ordenar=0;
+       //For para incluir los numeros en el array por teclado
         for(int i=0;i<num.length;i++){
             System.out.println("Introduce elemto "+(i+1)+" :");
             num[i]=sc.nextInt();
@@ -32,6 +34,7 @@ public class Numerosprimos {
             System.out.print(num[i]+" \t");
         }
           System.out.println("\n El array con los primos primero es: ");
+          //For para ordenar el array.Primero se ordenan los numeros primos
          for(int i=0;i<num.length;i++){
              if (num[i] % 2 == 0 && num[i] != 2){
                  
@@ -42,6 +45,7 @@ public class Numerosprimos {
              }
              
          }
+         //For para introducir los numeros que no sean primos
          for(int i=0;i<num.length;i++){
              if (num[i] % 2 == 0 && num[i] != 2){
                resultado[ordenar] = num[i];
